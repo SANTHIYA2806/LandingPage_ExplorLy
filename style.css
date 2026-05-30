@@ -9,6 +9,9 @@
     --blue :#1c77b9;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+body{
+    background-color: blanchedalmond;
+}
 #welcome{
     height:100vh;
     width:100%;
@@ -21,9 +24,13 @@ nav{
     margin-left: 30px;
     padding-top: 10px;
     display: flex;
-    justify-content: space-between;
-    gap: 200px;
+    align-items: center;
     color: white;
+}
+.bars{
+    margin-left: 200px;
+    display: flex;
+    gap: 30px;
 }
 nav a{
     text-decoration: none;
@@ -56,6 +63,17 @@ nav button:hover{
     margin-left: 40px;
     margin-top: 100px;
 }
+.bigtitle{
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 0.8;
+}
+.bigpara{
+    margin-top: 25px;
+    color: white;
+    line-height: 1.5;
+}
 .btn{
     display: flex;
     gap: 40px;
@@ -73,17 +91,51 @@ nav button:hover{
     text-align: center;
     border: 1.5px solid gold;
 }
-.circle{
+.circle1{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: var(--blue);
+    position: absolute;
+    left: 30px;
+    top: 470px;
 }
+.circle2{
+    width: 50px;
+    height: 50px; 
+    background-color: var(--blue);
+    border-radius: 50%;       
+    position: absolute;
+    left: 210px;
+    top: 470px;
+}
+.circle3{
+    width: 40px;
+    height: 40px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    position: absolute;
+    left: 445px;
+    top: 475px;
+}
+
 
 
 #destination{
     height:100vh;
     width:100%;       
+}
+.sec2-title{
+    color: goldenrod;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.sub-title{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
 }
 .line{
     position: absolute;
@@ -93,6 +145,16 @@ nav button:hover{
     left: 550px;
     height: 3px;
     margin-top: 30px;
+}
+.des-btn{
+    position: absolute;
+    top: 700px;
+    right: 80px;
+    background-color:var(--blue);
+    border: 2px solid var(--gold);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--gold);
 }
 .cards{
     display: grid;
@@ -107,8 +169,17 @@ nav button:hover{
     height: 330px;
     background-color: #fcd975;
     border-radius: 10px;
+    position: relative;
+}
+.heart{
+    position:absolute;
+    top:8px;
+    right:10px;
+    font-size:20px;   
 }
 .card img{
+    width: 250px;
+    height: 200px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
@@ -124,11 +195,42 @@ nav button:hover{
     height: 35px;
     color: var(--button-gold);
 }
+.place{
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.tag{
+    margin-left: 15px;
+}
+.rate{
+    margin-left: 13px;
+}
 
 
 #service{
     width: 100%;
     height: 135vh;
+}
+.s-p1{
+    font-size: 40px;
+    color: black;
+    margin-left: 80px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.s-p2{
+    font-size: 30px;
+    color:var(--blue);
+    margin-left: -40px;
+    text-align: center;
+}
+.s-p3{
+    font-size: 20px;
+    color: goldenrod;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
 }
 .service-cards{
     display: grid;
@@ -141,7 +243,7 @@ nav button:hover{
     border-radius: 20px;
     background-color: #7ADCFF;
     margin-top: 30px;
-    margin-left: 100px;
+    margin-left: 130px;
 }
 .s-card img{
     width: 250px;
@@ -158,6 +260,19 @@ nav button:hover{
     margin-left: 200px;
     border: 2px solid goldenrod;
 }
+.s-title{
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: goldenrod;
+}
+.s-tag{
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
 
 
 #long{
@@ -171,6 +286,47 @@ nav button:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
+}
+.longimg1{
+    width :110px;
+    height:120px;
+    margin-top: 5px;
+}
+.longimg2{
+    width :190px;
+    height:130px;
+}
+.longimg3{
+    width :150px;
+    height:120px;
+}
+.longimg4{
+    width :150px;
+    height:100px;
+    margin-top: 5px;
+}
+.longp1{
+    color: goldenrod;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.longp2{
+    color: goldenrod;
+    margin-top: 25px;
+    font-size: 30px;
+    margin-left: -50px;
+}
+.longp3{
+    color: goldenrod;
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left: -30px;
+}
+.longp4{
+    color: goldenrod;
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left: -30px;
 }
 .all{
     display: flex;
@@ -187,7 +343,6 @@ nav button:hover{
 .contact{
     display: flex;
     width: 100%;
-    margin-top: 50px;
 }
 .left{
     width: 50%;
@@ -196,7 +351,16 @@ nav button:hover{
     background-position: center left bottom;
     margin-left: -2px;
 }
-.left p{
+.left-p1{
+    color: white;
+    font-size: 40px;
+    margin-top:40px;
+    margin-left: 30px;
+}
+.left-p2{
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
     margin-left: 30px;
 }
 .left button{
@@ -240,6 +404,34 @@ input::placeholder{
 .dates::placeholder{
     color: var(--gold);
 }
+.name{
+    border: 2px solid var(--blue);
+    background: transparent;
+    box-shadow: 0px 1px 1px 1px var(--blue);
+    border-style: none;
+}
+.email{
+    border: 2px solid var(--gold);
+    background:transparent;
+    box-shadow: 0px 1px 1px 1px var(--gold);
+    border-style: none;
+}
+.destiny{
+    border: 2px solid var(--blue);
+    background: transparent;
+    box-shadow: 0px 1px 1px 1px var(--blue);
+    border-style: none;
+}
+.date{
+    width:200px;
+    height:45px;
+    border:2px solid var(--gold);
+    border-radius:10px;
+    padding:10px;
+    background:transparent;
+    box-shadow: 0px 0px 0px 0px var(--gold);
+    color:var(--gold);
+}
 .right textarea{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -255,8 +447,7 @@ input::placeholder{
     border: 2px solid goldenrod;
     padding: 5px;
     border-radius: 5px;
-    position: absolute;
-    left: 800px;
+    margin-left: 200px;
     align-items: center;
 }
 textarea::placeholder{
@@ -270,7 +461,7 @@ textarea::placeholder{
     display: flex;
     width: 100%;
     height: 52vh;
-    gap: 250px;
+    gap: 200px;
     background: linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./images/temple.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -281,11 +472,31 @@ textarea::placeholder{
     list-style: none;
     margin-bottom: 10px;
 }
-.first p{
-    margin-left: 30px;
+.first-p{
+    margin-top: 30px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
+    margin-left: 20px;
+}
+.first-p2{
+    color: white;
+    margin-left: 20px;
+}
+.second-p{
+    margin-top: 30px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:var(--blue);
 }
 .second ul a{
     text-decoration: none;
+}
+.third-p{
+    margin-top: 30px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--blue)
 }
 .lines{
     height: 0.1px;
@@ -298,4 +509,692 @@ textarea::placeholder{
     color:white;    
     position: absolute;
     top: 2900px;
+}
+.last-p{
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+
+@media (max-width:576px) {
+    #welcome{
+        background-size: cover;
+        background-position: center;
+    }
+    nav h3{
+        font-size: 16px !important;
+        margin-top: 5px;
+    }
+    nav{
+        margin-left: 20px !important;
+        gap: 5px !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bars{
+        margin-left: -100px !important;
+        display: flex;
+        font-size: 12px;
+    }
+    nav button{
+        width: 50px!important;
+        height: 30px !important;
+        position: absolute;
+        top: 10px;
+        font-size: 10px;
+    }
+    .content{
+        margin-left: 15px;
+        margin-top: 70px;
+    }
+    .content span{
+        font-size: 15px !important;
+        margin-left: 25px !important;
+    }
+    .bigtitle{
+        font-size: 35px;
+    }
+    .bigpara{
+        font-size: 10px !important;
+        line-height: 1.9;
+    }
+    .btn{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        width: 400px;
+    }
+    .circle1{
+        width: 47px;
+        height: 47px;
+        position:absolute;
+        left: 30px;
+        top: 400px !important;
+    }
+    .circle2{
+        width: 47px;
+        height: 47px; 
+        background-color: #1c77b9;
+        border-radius: 50%;       
+        position: absolute;
+        left: 180px;
+        top: 400px !important;
+    }
+    .circle3{
+        width: 47px;
+        height: 47px;
+        position: absolute;
+        left: 370px;
+        top: 400px !important;
+    }
+    .img1{
+        top: 405px !important; 
+    }
+    .img2{
+        top: 405px !important; 
+        left: 180px !important;
+    }
+    .img3{
+        top: 408px !important; 
+        left: 372px !important;
+    }
+    .para1{
+        font-size: 15px!important;
+        top: 410px!important;
+        left: 90px !important;
+    }
+    .para2{
+        font-size: 15px!important;
+        top: 410px!important;
+        left: 240px !important;
+    }
+    .para3{
+        font-size: 15px!important;
+        top: 410px!important;
+        left: 430px !important;
+    }
+    .sec2-title{
+        margin-top: 30px;
+        font-size: 20px;       
+    }
+    .sub-title{
+        font-size: 30px;
+    }
+    .des-btn{
+        width: 145px;
+        top: 630px;
+        right: 30px;
+        font-size: 12px;
+        background-color:var(--blue);
+        border: 2px solid var(--gold);
+        padding: 10px;border-radius: 10px;
+        color: var(--gold);
+    }
+    .line{
+        top: 605px;
+        left: 240px;
+        margin-top: 10px;
+        width: 80px;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        height: 280px;
+    }
+    .card{
+        width: 150px !important;
+        height: 235px !important;
+        border-top-left-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+        position: relative;
+    }
+    .card img{
+        width: 150px !important;
+        height: 130px !important;
+        border-top-left-radius: 10px !important;
+    }
+    .card button{
+        margin-left: 40px !important;
+        margin-top: 5px !important;
+        width: 100px !important;
+        height: 27px !important;
+    }
+    .place{
+        font-size: 18px;
+    }
+    .tag,.heart{
+        font-size: 15px;
+    }
+    .rate{
+        font-size: 15px;
+    }
+    .cards::-webkit-scrollbar{
+        height:8px;
+    }
+    .cards::-webkit-scrollbar-track{
+        background:#d9d9d9;
+        border-radius:10px;
+    }
+    .cards::-webkit-scrollbar-thumb{
+        background:#1c77b9;
+        border-radius:10px;
+    }
+    #service{
+        width: 100%;
+        height: 100vh;
+    }
+    .s-p1{
+    font-size: 30px;
+    }
+    .s-p2{
+        font-size: 23px;
+        margin-left: 20px;
+    }
+    .s-p3{
+        margin-top: 7px;
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .s-card {
+        width: 100px;
+        height: 250px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .s-card img{
+        width: 190px;
+        height: 150px;
+    }
+    .s-card button{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        font-size: 20px;
+        margin-left: 150px;
+    }
+    .s-title{
+        font-size: 17px;
+    }
+    .s-tag{
+        font-size: 11px;
+    }  
+    .service-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 1px;
+    }
+    #long{
+        height: 100vh;
+        margin-top: 270px;
+    }
+    .longg{
+        height: 80px;
+    }
+    .longimg1{
+        position: absolute;
+        top: 270px;
+    }
+    .longimg2{
+        position: absolute;
+        top: 270px;
+        left: 50px;
+    }
+    .longimg3{       
+        position: absolute;
+        top: 270px;
+        left: 150px;
+    }
+    .longimg4{
+        position: absolute;
+        top: 270px;
+        left: 300px;
+    }
+    .longp1{
+        position:absolute;
+        top: 270px;
+        left: 20px;
+        font-size: 15px;
+    }
+    .longp1 span{
+        font-size: 9px !important;
+    }
+    .longp2{
+        position:absolute;
+        top: 270px;
+        left: 150px;
+        font-size: 15px;
+    }
+    .longp2 span{
+        font-size: 10px !important;
+    }
+    .longp3{
+        position:absolute;
+        font-size: 15px;
+        left: 260px;
+        top: 270px;
+    }
+    .longp3 span{
+        font-size: 10px !important;
+    }
+    .longp4{
+        position:absolute;
+        font-size: 15px;
+        left: 380px;
+        top: 270px;
+    }
+    .longp4 span{
+        font-size: 9px !important;
+    }
+    .left-p1{
+        color: white;
+        font-size: 25px;
+        margin-top:40px;
+        margin-left: 20px;
+    }
+    .left-p2{
+        color: white;
+        margin-top: 20px;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .left button{
+        margin-top: 100px;
+        margin-left: -50px;
+    }
+    .right input{
+        margin-top: 5px;
+        height: 25px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+    .right textarea{
+        width: 210px;
+        height: 50px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .right button{
+        margin-left: 50px;
+    }
+    .right p{
+        font-size: 25px !important;
+        margin-bottom: 10px;
+    }
+    #about{
+        min-height: 70vh;
+        gap: 10px;
+    }
+    .first-p2{
+        font-size: 15px;
+    }
+    .first img{
+        width: 200px;
+    }
+    .second-p{
+        margin-top: 30px;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .second a{
+        font-size: 15px;
+    } 
+    .third-p{
+        font-size: 22px;
+    }     
+    .third li{
+        font-size: 15px;
+    }
+    .down{ 
+        top: 2850px;
+    }
+    .last-p{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    #welcome{
+        background-size: cover;
+        background-position: center;
+    }
+    nav h3{
+        font-size: 25px !important;
+        margin-top: 5px;
+    }
+    nav{
+        margin-left: 20px;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bars{
+        margin-left: -60px;
+        gap: 20px;
+        display: flex;
+        margin-top: 8px;
+    }
+    nav button{
+        width: 90px!important;
+        height: 35px !important;
+        position: absolute;
+        top: 10px;
+        right: 15px !important;
+        font-size: 10px;
+    }
+    .content{
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+    .content span{
+        font-size: 19px !important;
+        margin-left: 20px !important;
+    }
+    .bigtitle{
+        font-size: 38px;
+    }
+    .bigpara{
+        font-size: 12px !important;
+        line-height: 1.9;
+    }
+    .btn{
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        width: 380px;
+    }
+    .circle1{
+        width: 50px;
+        height: 50px;
+        position:absolute;
+        left: 30px;
+        top: 410px !important;
+    }
+    .circle2{
+        width: 50px;
+        height: 50px; 
+        background-color: #1c77b9;
+        border-radius: 50%;       
+        position: absolute;
+        left: 180px;
+        top: 410px !important;
+    }
+    .circle3{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 370px;
+        top: 410px !important;
+    }
+    .img1{
+        top: 415px !important; 
+    }
+    .img2{
+        top: 415px !important; 
+        left: 180px !important;
+    }
+    .img3{
+        top: 418px !important; 
+        left: 372px !important;
+    }
+    .para1{
+        font-size: 15px!important;
+        top: 420px!important;
+        left: 90px !important;
+    }
+    .para2{
+        font-size: 15px!important;
+        top: 420px!important;
+        left: 240px !important;
+    }
+    .para3{
+        font-size: 15px!important;
+        top: 420px!important;
+        left: 430px !important;
+    }
+    .sec2-title{
+        margin-top: 30px;
+        font-size: 20px;       
+    }
+    .sub-title{
+        font-size: 30px;
+    }
+    .des-btn{
+        width: 145px;
+        top: 630px;
+        right: 30px;
+        font-size: 12px;
+        background-color:var(--blue);
+        border: 2px solid var(--gold);
+        padding: 10px;border-radius: 10px;
+        color: var(--gold);
+    }
+    .line{
+        top: 605px;
+        left: 290px;
+        margin-top: 15px;
+        width: 80px;
+    }
+    .cards{
+        margin-left: 50px !important;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        height: 280px;
+        width: 610px;
+    }
+    .card{
+        width: 350px !important;
+        height: 235px !important;
+        border-top-left-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+        position: relative;
+    }
+    .card img{
+        width: 200px !important;
+        height: 130px !important;
+        border-top-left-radius: 10px !important;
+    }
+    .card button{
+        margin-left: 40px !important;
+        margin-top: 5px !important;
+        width: 100px !important;
+        height: 27px !important;
+    }
+    .place{
+        font-size: 18px;
+    }
+    .tag,.heart{
+        font-size: 15px;
+    }
+    .rate{
+        font-size: 15px;
+    }
+    .cards::-webkit-scrollbar{
+        height:8px;
+    }
+    .cards::-webkit-scrollbar-track{
+        background:#d9d9d9;
+        border-radius:10px;
+    }
+    .cards::-webkit-scrollbar-thumb{
+        background:#1c77b9;
+        border-radius:10px;
+    }
+    #service{
+        width: 100%;
+        height: 140vh;
+    }
+    .s-p1{
+        font-size: 30px;
+    }
+    .s-p2{
+        font-size: 23px;
+        margin-left: 20px;
+    }
+    .s-p3{
+        margin-top: 7px;
+        font-size: 15px;
+    }
+    .s-card {
+        width: 190px;
+        height: 250px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .s-card img{
+        width: 190px;
+        height: 150px;
+    }
+    .s-card button{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        font-size: 20px;
+        margin-left: 150px;
+    }
+    .s-title{
+        font-size: 17px;
+    }
+    .s-tag{
+        font-size: 11px;
+    }
+    #long{
+        height: 100vh;
+    }
+    .longg{
+        height: 80px;
+    }
+    .longimg1{
+        width :80px;
+        height:80px;
+        margin-left: -50px;
+        margin-top: -300px;
+    }
+    .longimg2{
+        width :95px;
+        height:80px;
+        margin-top: -300px;
+        margin-left: 10px;
+    }
+    .longimg3{
+        width :80px;
+        height:75px;
+        margin-top: -295px;
+        margin-left: 35px;
+    }
+    .longimg4{
+        width :75px;
+        height:60px;
+        margin-top: -285px;
+        margin-left: 10px;
+    }
+    .longp1{
+        color: goldenrod;
+        margin-top: -280px;
+        font-size: 20px;
+    }
+    .longp1 span{
+        font-size: 9px !important;
+    }
+    .longp2{
+        color: goldenrod;
+        margin-top: -280px;
+        font-size: 20px;
+        margin-left: -20px;
+    }
+    .longp2 span{
+        font-size: 10px !important;
+    }
+    .longp3{
+        color: goldenrod;
+        margin-top: 20px;
+        font-size: 20px;
+        margin-top: -280px;
+        margin-left: -10px;
+    }
+    .longp3 span{
+        font-size: 10px !important;
+    }
+    .longp4{
+        color: goldenrod;
+        margin-top: 20px;
+        font-size: 20px;
+        margin-top: -280px;
+        margin-left: -5px;
+    }
+    .longp4 span{
+        font-size: 9px !important;
+    }
+    .left-p1{
+        color: white;
+        font-size: 25px;
+        margin-top:40px;
+        margin-left: 20px;
+    }
+    .left-p2{
+        color: white;
+        margin-top: 20px;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .left button{
+        margin-top: 100px;
+        margin-left: -50px;
+    }
+    .right input{
+        margin-top: 5px;
+        height: 25px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+    .right textarea{
+        width: 210px;
+        height: 50px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .right button{
+        margin-left: 80px;
+    }
+    .right p{
+        font-size: 25px !important;
+        margin-bottom: 10px;
+    }
+    #about{
+        min-height: 60vh;
+        gap: 10px;
+    }
+    .first-p2{
+        font-size: 15px;
+    }
+    .first img{
+        width: 200px;
+    }
+    .second-p{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .second a{
+        font-size: 16px;
+    } 
+    .third-p{
+        font-size: 24px;
+    }     
+    .third li{
+        font-size: 16px;
+    }
+    .down{ 
+        top: 2535px;
+    }
+    .last-p{
+        font-size: 12px;
+    }    
 }
